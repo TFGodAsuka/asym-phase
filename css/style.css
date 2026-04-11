@@ -392,6 +392,30 @@ img {
 .site-nav a:hover {
   opacity: 1;
 }
+
+.lang-toggle {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #7b6a5b;
+}
+
+.lang-toggle button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  opacity: 0.55;
+}
+
+.lang-toggle button.is-active {
+  opacity: 1;
+  color: #4a3328;
+}
 /* =========================
    Process page
    ========================= */
@@ -789,8 +813,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  object-fit: contain;
   background: #ddd6cb;
 }
 
@@ -855,9 +878,43 @@ img {
   color: #8a7868;
 }
 
+.home-storyboard-preview {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1080px;
+}
+
+@media (min-width: 901px) {
+  .home-storyboard-preview .dev-frame-card:first-child {
+    margin-top: 14px;
+  }
+}
+
+.home-section-cue {
+  margin: 18px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #7b6a5b;
+}
+
+.home-section-cue a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #bcae9f;
+}
+
+.home-section-cue a:hover {
+  border-color: #4a3328;
+}
+
 @media (max-width: 900px) {
   .dev-frame-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-storyboard-preview {
+    grid-template-columns: 1fr;
+    max-width: none;
   }
 }
 /* =========================

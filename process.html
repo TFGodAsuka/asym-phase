@@ -12,31 +12,37 @@
   <header class="site-header">
     <div class="title-wrap">
       <h1>ASYM \ <br>PHASE</h1>
-      <p class="project-meta">Process / Blender Proof / Motion Preview</p>
+      <p class="project-meta" data-i18n data-i18n-cn="过程 / Blender 工作文件 / 动态预览">Process / Blender Proof / Motion Preview</p>
     </div>
 
     <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="overview.html">Overview</a>
-      <a href="posters.html">Posters</a>
-      <a href="models.html">Models</a>
-      <a href="characters.html">Characters</a>
-      <a href="process.html" class="is-active">Process</a>
-      <a href="script.html">Script</a>
-      <a href="future.html">Future</a>
+      <a href="index.html" data-i18n data-i18n-cn="首页">Home</a>
+      <a href="overview.html" data-i18n data-i18n-cn="概览">Overview</a>
+      <a href="posters.html" data-i18n data-i18n-cn="海报">Posters</a>
+      <a href="models.html" data-i18n data-i18n-cn="模型">Models</a>
+      <a href="characters.html" data-i18n data-i18n-cn="角色">Characters</a>
+      <a href="process.html" class="is-active" data-i18n data-i18n-cn="过程">Process</a>
+      <a href="script.html" data-i18n data-i18n-cn="剧本">Script</a>
+      <a href="future.html" data-i18n data-i18n-cn="未完待续">To Be Continued</a>
     </nav>
+
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang-toggle="en" aria-pressed="false">EN</button>
+      <span>/</span>
+      <button type="button" data-lang-toggle="cn" aria-pressed="true">CN</button>
+    </div>
   </header>
 
   <main class="page-main">
     <section class="editorial-section">
-      <p class="section-kicker">Process</p>
-      <h2 class="section-title">From poster image to staged reconstruction in Blender.</h2>
+      <p class="section-kicker" data-i18n data-i18n-cn="过程">Process</p>
+      <h2 class="section-title" data-i18n data-i18n-cn="从海报图像，到 Blender 里的舞台化重建。">From poster image to staged reconstruction in Blender.</h2>
       <p class="section-text">
-        This page records selected parts of the working process behind <em>Asym \ phase</em>.
-        The final posters are not treated as isolated flat images. They are rebuilt in Blender
-        through scene layout, title structure, lighting control, shader setup, and compositing.
+        <span data-i18n data-i18n-cn="这一页整理的是">This page records selected parts of the working process behind</span> <em>Asym \ phase</em><span data-i18n data-i18n-cn="的一部分工作过程。">.</span>
+        <span data-i18n data-i18n-cn="最终海报并不是作为孤立的平面图像来处理的，而是通过场景布局、标题结构、灯光控制、着色器设置和合成，在 Blender 中被重新搭建出来。">The final posters are not treated as isolated flat images. They are rebuilt in Blender
+        through scene layout, title structure, lighting control, shader setup, and compositing.</span>
       </p>
-      <p class="section-text">
+      <p class="section-text" data-i18n data-i18n-cn="这一页并不打算展开每一个技术步骤，而是挑出几个更关键的片段：工作文件的搭建、视觉方向的测试、基于节点的控制，以及来自当前展示场景的转台预览。">
         Rather than showing every technical step in full detail, this page focuses on several key fragments:
         working-file construction, visual direction tests, node-based control, and turntable previews
         derived from the current showcase scenes.
@@ -45,8 +51,46 @@
     </section>
 
     <section class="editorial-section">
-      <p class="section-kicker">Working File Proof</p>
-      <h2 class="section-title">Blender scene construction</h2>
+      <p class="section-kicker" data-i18n data-i18n-cn="精选迭代">Selected Iterations</p>
+      <h2 class="section-title" data-i18n data-i18n-cn="用更精简的方式，看最终呈现之前的视觉方向是怎样一步步被试出来的。">A compact look at how the visual direction was tested before final presentation.</h2>
+      <p class="section-text" data-i18n data-i18n-cn="这一节不想让过程页只是最终图像的重复。这里选出的画面对应的是角色、环境和场景方向的几次测试，它们一起推动了后续的分镜与海报语言。">
+        This section keeps the process page from reading only as repeated final imagery.
+        The selected frames show character, environment, and scene-direction trials that helped shape the later
+        storyboard and poster language.
+      </p>
+
+      <div class="dev-frame-grid">
+        <figure class="dev-frame-card">
+          <img src="assets/site-update/process/process_boy_nello_realistic.jpg"
+            alt="Realistic Boy and Nello development image">
+          <figcaption data-i18n data-i18n-cn="角色关系测试 / 写实开发阶段中的男孩与 Nello。">Character relationship test / boy and Nello in a realistic development pass.</figcaption>
+        </figure>
+
+        <figure class="dev-frame-card">
+          <img src="assets/site-update/process/process_hut_detail.jpg" alt="Hut environment detail development image">
+          <figcaption data-i18n data-i18n-cn="环境细节测试 / 小屋的材质、光线与生活痕迹。">Environment detail test / cottage material, light, and lived-in texture.</figcaption>
+        </figure>
+
+        <figure class="dev-frame-card">
+          <img src="assets/site-update/process/process_s02_dev.jpg" alt="Scene 02 development image">
+          <figcaption data-i18n data-i18n-cn="场景 02 开发 / 最终风格化之前的森林穿行氛围测试。">Scene 02 development / forest crossing atmosphere before final stylization.</figcaption>
+        </figure>
+
+        <figure class="dev-frame-card">
+          <img src="assets/site-update/process/process_s05_dev.jpg" alt="Scene 05 development image">
+          <figcaption data-i18n data-i18n-cn="场景 05 开发 / 车厢段落的情绪与成年时间线研究。">Scene 05 development / train-compartment mood and adult timeline study.</figcaption>
+        </figure>
+      </div>
+
+      <figure class="dev-frame-card" style="max-width: 760px; margin: 34px auto 0;">
+        <img src="assets/site-update/process/process_oil_style_variant.jpg" alt="Oil-painterly style variant">
+        <figcaption data-i18n data-i18n-cn="这是在测试 Arcane 启发下的视觉语言时曾经走过的一条油画分支。它本身有气氛，但最终没有被纳入最后的视觉系统。">A divergent oil-painterly direction explored while testing an Arcane-inspired visual language; atmospheric on its own, but ultimately outside the final visual system.</figcaption>
+      </figure>
+    </section>
+
+    <section class="editorial-section">
+      <p class="section-kicker" data-i18n data-i18n-cn="工作文件证明">Working File Proof</p>
+      <h2 class="section-title" data-i18n data-i18n-cn="Blender 场景搭建">Blender scene construction</h2>
 
       <div class="process-proof-grid">
         <article class="process-card">
@@ -54,8 +98,8 @@
             <img src="assets/process/blender_ui_01.png" alt="Blender working file screenshot 01" />
           </div>
           <div class="process-card-text">
-            <h3 class="process-card-title">Poster scene reconstruction I</h3>
-            <p class="process-card-copy">
+            <h3 class="process-card-title" data-i18n data-i18n-cn="海报场景重建 I">Poster scene reconstruction I</h3>
+            <p class="process-card-copy" data-i18n data-i18n-cn="海报构图在这里被重新搭成一个舞台化的三维空间，而不是停留在纯平面的图形表面。">
               The poster composition is rebuilt as staged three-dimensional space rather than left as a purely graphic surface.
             </p>
           </div>
@@ -66,8 +110,8 @@
             <img src="assets/process/blender_ui_02.png" alt="Blender working file screenshot 02" />
           </div>
           <div class="process-card-text">
-            <h3 class="process-card-title">Poster scene reconstruction II</h3>
-            <p class="process-card-copy">
+            <h3 class="process-card-title" data-i18n data-i18n-cn="海报场景重建 II">Poster scene reconstruction II</h3>
+            <p class="process-card-copy" data-i18n data-i18n-cn="标题结构、角色位置、道具和背景深度会被一起调整，让画面同时保留图形上的清晰感和空间里的存在感。">
               Title structure, character placement, props, and background depth are adjusted together
               so the scene keeps both graphic clarity and spatial presence.
             </p>
@@ -77,9 +121,9 @@
     </section>
 
     <section class="editorial-section">
-      <p class="section-kicker">Visual Development</p>
-      <h2 class="section-title">Design studies and style-direction tests</h2>
-      <p class="section-text">
+      <p class="section-kicker" data-i18n data-i18n-cn="视觉开发">Visual Development</p>
+      <h2 class="section-title" data-i18n data-i18n-cn="设计研究与风格方向测试">Design studies and style-direction tests</h2>
+      <p class="section-text" data-i18n data-i18n-cn="在最终视觉语言稳定下来之前，这个项目经历过几轮转译：先从写实图像开发开始，再进入风格化方向测试。这里的画面都不是最终输出，而是一步步把项目气质和视觉身份推清楚的过程。">
         Before the final visual language became stable, the project moved through multiple stages of translation:
         realistic image development first, then stylized direction testing.
         These frames are not final outputs, but part of the process that shaped the project’s eventual tone and identity.
@@ -88,29 +132,29 @@
       <div class="dev-frame-grid">
         <figure class="dev-frame-card">
           <img src="assets/process/realistic_design_01.png" alt="Realistic design development 01">
-          <figcaption>Realistic design development 01</figcaption>
+          <figcaption data-i18n data-i18n-cn="写实设计开发 01">Realistic design development 01</figcaption>
         </figure>
 
         <figure class="dev-frame-card">
           <img src="assets/process/realistic_design_02.png" alt="Realistic design development 02">
-          <figcaption>Realistic design development 02</figcaption>
+          <figcaption data-i18n data-i18n-cn="写实设计开发 02">Realistic design development 02</figcaption>
         </figure>
 
         <figure class="dev-frame-card">
           <img src="assets/process/style_test_01.png" alt="Style direction test 01">
-          <figcaption>Style direction test 01</figcaption>
+          <figcaption data-i18n data-i18n-cn="风格方向测试 01">Style direction test 01</figcaption>
         </figure>
 
         <figure class="dev-frame-card">
           <img src="assets/process/style_test_02.png" alt="Style direction test 02">
-          <figcaption>Style direction test 02</figcaption>
+          <figcaption data-i18n data-i18n-cn="风格方向测试 02">Style direction test 02</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="editorial-section">
-      <p class="section-kicker">Node-Based Control</p>
-      <h2 class="section-title">Shader and compositor snapshots</h2>
+      <p class="section-kicker" data-i18n data-i18n-cn="基于节点的控制">Node-Based Control</p>
+      <h2 class="section-title" data-i18n data-i18n-cn="着色器与合成器快照">Shader and compositor snapshots</h2>
 
       <div class="process-node-stack">
         <article class="process-node-item">
@@ -118,9 +162,9 @@
             <img src="assets/process/world-shader-nodes.png" alt="World shader nodes screenshot" />
           </div>
           <div class="process-node-text">
-            <p class="poster-phase">World Shader</p>
-            <h3>Background gradient control</h3>
-            <p>
+            <p class="poster-phase" data-i18n data-i18n-cn="世界着色器">World Shader</p>
+            <h3 data-i18n data-i18n-cn="背景渐变控制">Background gradient control</h3>
+            <p data-i18n data-i18n-cn="世界着色器主要用来整理背景氛围，让最后的画面保持克制。它把环境色彩和主角色的阅读关系分开处理，使背景能够托住海报情绪，但不会把人物压平。">
               The world shader setup is used to shape the background atmosphere while keeping the final presentation restrained.
               It separates environmental color treatment from the main character read,
               allowing the background to support the poster mood without flattening the figure.
@@ -133,9 +177,9 @@
             <img src="assets/process/compositor-nodes.png" alt="Compositor nodes screenshot" />
           </div>
           <div class="process-node-text">
-            <p class="poster-phase">Compositor</p>
-            <h3>Final texture and grading pass</h3>
-            <p>
+            <p class="poster-phase" data-i18n data-i18n-cn="合成器">Compositor</p>
+            <h3 data-i18n data-i18n-cn="最终纹理与调色处理">Final texture and grading pass</h3>
+            <p data-i18n data-i18n-cn="合成器的调整主要通过细微颗粒、明度控制和色彩分级把渲染统一起来，让图像更接近最终呈现，而不是停留在原始视口状态。">
               Compositor adjustments unify the render through subtle grain, value control, and color grading,
               bringing the image closer to a finished presentation rather than a raw viewport result.
             </p>
@@ -145,8 +189,8 @@
     </section>
 
     <section class="editorial-section">
-      <p class="section-kicker">Motion Preview</p>
-      <h2 class="section-title">Turntable studies from the current showcase scenes</h2>
+      <p class="section-kicker" data-i18n data-i18n-cn="动态预览">Motion Preview</p>
+      <h2 class="section-title" data-i18n data-i18n-cn="来自当前展示场景的转台研究">Turntable studies from the current showcase scenes</h2>
 
       <div class="motion-preview-grid">
         <article class="motion-card">
@@ -156,9 +200,9 @@
             </video>
           </div>
           <div class="motion-card-text">
-            <p class="poster-phase">Adult Stage</p>
-            <h3>Turntable preview</h3>
-            <p>
+            <p class="poster-phase" data-i18n data-i18n-cn="成年阶段">Adult Stage</p>
+            <h3 data-i18n data-i18n-cn="转台预览">Turntable preview</h3>
+            <p data-i18n data-i18n-cn="这是一段来自成年重建场景的短转台，用来展示模型、标题结构和构图如何作为一个空间编排存在，而不只是单一角度下的海报视图。">
               A short turntable derived from the adult reconstruction scene, showing model, title structure,
               and composition as a spatial arrangement rather than a single-angle poster view.
             </p>
@@ -172,9 +216,9 @@
             </video>
           </div>
           <div class="motion-card-text">
-            <p class="poster-phase">Childhood Stage</p>
-            <h3>Turntable preview</h3>
-            <p>
+            <p class="poster-phase" data-i18n data-i18n-cn="童年阶段">Childhood Stage</p>
+            <h3 data-i18n data-i18n-cn="转台预览">Turntable preview</h3>
+            <p data-i18n data-i18n-cn="这是一段来自童年重建场景的短转台，它把海报系统继续展开成更明确的舞台空间，也让深度、体量和张力变得更可见。">
               A short turntable derived from the childhood reconstruction scene,
               extending the poster system into a more explicitly staged space with depth, volume, and tension.
             </p>
@@ -184,24 +228,25 @@
     </section>
 
     <section class="editorial-section">
-      <p class="section-kicker">Current Role of This Page</p>
-      <h2 class="section-title">Making construction visible without turning the site into a full technical breakdown</h2>
-      <p class="section-text">
+      <p class="section-kicker" data-i18n data-i18n-cn="这一页的当前角色">Current Role of This Page</p>
+      <h2 class="section-title" data-i18n data-i18n-cn="让建构过程可见，同时不把网站变成完整的技术拆解">Making construction visible without turning the site into a full technical breakdown</h2>
+      <p class="section-text" data-i18n data-i18n-cn="这一页想展示的，是这个项目怎样被一步步建立起来：不只是最终图像本身，也包括空间重建、基于节点的调整，以及支撑最终呈现的动态测试。">
         This page shows how the project is built: not only through final images,
         but through spatial reconstruction, node-based adjustment, and motion-oriented tests that support the final presentation.
       </p>
-      <p class="section-text">
+      <p class="section-text" data-i18n data-i18n-cn="它既是一份制作证据，也是一份经过筛选的技术记录，同时仍然把项目的重心留在氛围、象征和视觉叙事上。">
         It works as both production evidence and a selective technical record,
         while still keeping the project’s main focus on atmosphere, symbolism, and visual narrative.
       </p>
 
       <div class="page-tail-nav">
-        <a class="page-tail-link" href="characters.html">← Characters</a>
-        <a class="page-tail-link" href="script.html">Script →</a>
+        <a class="page-tail-link" href="characters.html" data-i18n data-i18n-cn="← 角色">← Characters</a>
+        <a class="page-tail-link" href="script.html" data-i18n data-i18n-cn="剧本 →">Script →</a>
       </div>
     </section>
   </main>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 
